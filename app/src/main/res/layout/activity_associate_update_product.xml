@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddProduct">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+        <TextView
+            android:layout_margin="10dp"
+            android:id="@+id/textViewHeading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter Product Details"
+            android:background="@drawable/shape_login"
+            app:layout_constraintTop_toTopOf="parent"
+            android:gravity="center"
+            android:padding="20dp"
+            />
+
+        <EditText
+            android:layout_margin="10dp"
+            android:id="@+id/editTextHeading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Product Name"
+            app:layout_constraintTop_toBottomOf="@+id/textViewHeading"
+            app:layout_constraintStart_toStartOf="parent"
+            android:editable="false"
+            />
+
+        <EditText
+            android:layout_margin="10dp"
+            android:id="@+id/editTextQuant"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:hint="Quantity"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextHeading"
+            android:padding="10dp"
+            android:inputType="number"/>
+        <TextView
+            android:id="@+id/editTextCity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:visibility="gone"/>
+        <EditText
+            android:id="@+id/editTextPrice"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="Price"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextHeading"
+            android:inputType="numberDecimal"/>
+        <EditText
+            android:id="@+id/editTextCategory"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="Category"
+            app:layout_constraintStart_toEndOf="@id/editTextQuant"
+            app:layout_constraintTop_toBottomOf="@+id/editTextHeading"/>
+        <EditText
+            android:layout_margin="10dp"
+            android:id="@+id/editTextDesc"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:hint="Description"
+            android:inputType="textMultiLine"
+            android:maxLines="5"
+            android:scrollbars="vertical"
+            android:gravity="top|start"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextQuant"
+            android:padding="10dp"/>
+
+
+
+        <ImageView
+            android:layout_margin="10dp"
+            android:id="@+id/imageSwitcher"
+            android:layout_width="match_parent"
+            android:layout_height="270dp"
+            android:layout_marginTop="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextDesc">
+
+        </ImageView>
+        <ImageButton
+            android:id="@+id/imageButtonNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="135dp"
+            android:src="@drawable/next_white"
+            app:layout_constraintEnd_toEndOf="@+id/imageSwitcher"
+            app:layout_constraintTop_toBottomOf="@+id/editTextDesc" />
+
+        <ImageButton
+            android:id="@+id/imageButtonPrev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="135dp"
+            android:src="@drawable/prev_white"
+            app:layout_constraintStart_toStartOf="@+id/imageSwitcher"
+            app:layout_constraintTop_toBottomOf="@+id/editTextDesc" />
+        <ImageButton
+            android:id="@+id/buttonAddImages"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:text="Add Images"
+            android:src="@drawable/ic_baseline_add_a_photo_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="@+id/imageSwitcher" />
+        <Button
+            android:id="@+id/buttonSaveProduct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update Product"
+            app:layout_constraintTop_toBottomOf="@+id/imageSwitcher"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_margin="10dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

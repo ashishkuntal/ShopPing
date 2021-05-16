@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ItemDetailsView">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".ItemDetailsView"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/dummy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingActionButtonBackDet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            app:backgroundTint="#FFFFFF"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_baseline_arrow_back_24" />
+
+        <TextView
+            android:layout_margin="10dp"
+            android:id="@+id/textViewNameDet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imageSwitcherDet"
+            android:textSize="30sp"/>
+        <ImageView
+            android:layout_margin="10dp"
+            android:id="@+id/imageSwitcherDet"
+            android:layout_width="match_parent"
+            android:layout_height="270dp"
+            android:layout_marginTop="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/floatingActionButtonBackDet"/>
+        <ImageButton
+            android:id="@+id/imageButtonPrev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="135dp"
+            android:src="@drawable/prev_white"
+            app:layout_constraintStart_toStartOf="@+id/imageSwitcherDet"
+            app:layout_constraintTop_toBottomOf="@+id/floatingActionButtonBackDet" />
+        <ImageButton
+            android:id="@+id/imageButtonNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="135dp"
+            android:src="@drawable/next_white"
+            app:layout_constraintEnd_toEndOf="@+id/imageSwitcherDet"
+            app:layout_constraintTop_toBottomOf="@+id/floatingActionButtonBackDet" />
+        <TextView
+            android:layout_margin="10dp"
+            android:id="@+id/mrp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewNameDet"
+            android:text="Mrp : "
+            android:textSize="20sp"/>
+        <TextView
+            android:layout_margin="10dp"
+            android:id="@+id/textViewPriceDet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@+id/mrp"
+            app:layout_constraintTop_toBottomOf="@id/textViewNameDet"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimaryDark"/>
+        <TextView
+            android:layout_margin="10dp"
+            android:id="@+id/textViewInStock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewPriceDet"
+            android:textSize="15sp"
+            android:text="In Stock"
+            android:textColor="@color/colorAccent"/>
+        <TextView
+            android:layout_margin="10dp"
+            android:id="@+id/textViewDescDet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewInStock"
+            android:textSize="15sp"/>
+        <Button
+            android:id="@+id/buttonUpdateItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/textViewDescDet"
+            android:text="Update"
+            android:layout_marginTop="50dp"/>
+        <Button
+            android:id="@+id/buttonRemoveItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/buttonUpdateItem"
+            android:text="Remove"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

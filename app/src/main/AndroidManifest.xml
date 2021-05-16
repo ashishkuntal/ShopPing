@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.minor.shopping">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@drawable/wide_screen_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/wide_screen_logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ShopPing">
+        <activity android:name=".user_cart"></activity>
+        <activity android:name=".UserMain" />
+        <activity android:name=".AssociateUpdateProduct" />
+        <activity android:name=".AssociateInventoryItemDetail" />
+        <activity android:name=".Profile" />
+        <activity android:name=".ItemDetailsView" />
+        <activity
+            android:name=".Navigate"
+            android:label="@string/title_activity_navigate"
+            android:theme="@style/Theme.ShopPing.NoActionBar" />
+        <activity
+            android:name=".Navigation"
+            android:label="@string/title_activity_navigation"
+            android:theme="@style/Theme.ShopPing.NoActionBar" />
+        <activity
+            android:name=".NavigationDrawerActivity"
+            android:label="@string/title_activity_navigation_drawer"
+            android:theme="@style/Theme.ShopPing.NoActionBar" />
+        <activity android:name=".AssociateAddProduct" />
+        <activity android:name=".Chooser" />
+        <activity android:name=".AssociateProfileFollowUp" />
+        <activity android:name=".UserProfileFollowUp" />
+        <activity android:name=".SignUp" />
+        <activity android:name=".Login" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

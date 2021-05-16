@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".UserProfileFollowUp">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Complete Your Profile"
+        android:layout_margin="20dp"
+        android:background="@drawable/shape_login_button"
+        android:padding="5dp"
+        android:gravity="center"
+        android:textColor="#FFF"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:id="@+id/profilePicAct"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/camera" />
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/profilePicTextAct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Click camera to upload Profile photo"
+            android:layout_below="@+id/profilePicAct"
+            />
+        <ProgressBar
+            android:id="@+id/progressBarAct1"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:padding="5dp">
+        <EditText
+            android:id="@+id/editTextNameAct"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="Full Name" />
+        <EditText
+            android:id="@+id/editTextCityAct"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="City"
+            android:layout_below="@+id/editTextNameAct"/>
+        <EditText
+            android:id="@+id/editTextPinCodeAct"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="Pincode"
+            android:layout_below="@+id/editTextCityAct"/>
+        <EditText
+            android:id="@+id/editTextPhoneAct"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="Mobile"
+            android:layout_below="@+id/editTextPinCodeAct"/>
+        <ProgressBar
+            android:id="@+id/progressBarAct2"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            />
+
+    </RelativeLayout>
+    <Button
+        android:id="@+id/buttonStartAct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get Started"
+        android:layout_gravity="center"
+        />
+</LinearLayout>
+</ScrollView>
