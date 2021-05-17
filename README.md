@@ -1,7 +1,5 @@
 # To Do Application
-**Objective:** A very interactive To-Do Application.
-## Demo Website
-- 👉 Githu8b : [https://ashutoshkumar2000.github.io/ToDo-App/](https://ashutoshkumar2000.github.io/ToDo-App/)
+**Objective:** An application to help shopkeepers sell more of their products.
 
 ## Tech Stack
 
